@@ -531,6 +531,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Xbox:
+    url: https://ghp.ci/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Xbox.list
+    path: ./ruleset/Xbox.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
 
 rules:
   - "RULE-SET,LocalAreaNetwork,全球直连"
@@ -552,6 +559,7 @@ rules:
   - "RULE-SET,Sony,游戏平台"
   - "RULE-SET,Steam,游戏平台"
   - "RULE-SET,Nintendo,游戏平台"
+  - "RULE-SET,Xbox,游戏平台" 
   - "RULE-SET,YouTube,油管视频"
   - "RULE-SET,Netflix,奈飞视频"
   - "RULE-SET,Bahamut,巴哈姆特"
